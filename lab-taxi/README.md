@@ -1,5 +1,22 @@
 # Taxi Problem
 
+### My results
+I would like to make a quick explanation on my results. I could achieve a maximum average reward over 100
+episodes of 9.2 - 9.45. Here my best hyperparametric combination:
+
+- 20000 episodes
+- Strategy: Expected SARSA
+- epsilon development: Linear decay from equiprobable random policy into a constant arrival bias at num_episodes * 7 / 8 iterations
+- epsilon arrival bias: 0.001
+- alpha: 0.6
+- gamma: 1
+
+Here a figure of the learning curve:
+![alt text](/lab-taxi/lab_taxi_learning_curve.png)
+Note: In order to plot the learning curve do not forget to install tkinter.
+
+
+
 ### Getting Started
 
 Read the description of the environment in subsection 3.1 of [this paper](https://arxiv.org/pdf/cs/9905014.pdf).  You can verify that the description in the paper matches the OpenAI Gym environment by peeking at the code [here](https://github.com/openai/gym/blob/master/gym/envs/toy_text/taxi.py).
