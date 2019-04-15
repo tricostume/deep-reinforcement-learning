@@ -13,6 +13,7 @@ episodes of 9.2 - 9.45. Here my best hyperparametric combination:
 
 Here a figure of the learning curve:
 ![alt text](/lab-taxi/lab_taxi_learning_curve.png)
+
 Note: In order to plot the learning curve do not forget to install tkinter.
 
 
