@@ -11,7 +11,15 @@ agent = Agent(nA=6,\
               GLIE_param=0.001,\
               alpha = 0.6,\
               gamma = 1)
-
+'''
+# Also working well
+agent = Agent(nA=6,\
+              strategy="sarsamax",\
+              GLIE="constant",\
+              GLIE_param=0.001,\
+              alpha = 0.4,\
+              gamma = 1)
+'''
 num_episodes = 20000
 avg_rewards, best_avg_reward = interact(env, agent, num_episodes=num_episodes)
 
