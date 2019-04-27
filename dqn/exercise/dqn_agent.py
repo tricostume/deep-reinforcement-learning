@@ -84,11 +84,27 @@ class Agent():
             gamma (float): discount factor
         """
         states, actions, rewards, next_states, dones = experiences
-
         ## TODO: compute and minimize the loss
-        "*** YOUR CODE HERE ***"
 
+        #print("learning!")
+        next_action_values_target = self.qnetwork_target(next_states).detach().max(1)[0].unsqueeze(1)
+        next_action_values_local = self.qnetwork_local(states).gather(1, actions)
+        
+        '''
+        print(next_action_values_local.shape)
+        print(next_action_values_local[0][:])
+        print(next_action_values_local.gather(1, actions).shape)
+        print(actions[0][0])
+        print(next_action_values_local.gather(1, actions)[0][0])
+        '''
+        y = rewards + (gamma * next_action_values_target*(1 - dones))
+        # Local network will be actualized, target one is used as ground truth
+        loss = F.mse_loss(next_action_values_local, y)
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
         # ------------------- update target network ------------------- #
+        # Copy from local to target network parameters
         self.soft_update(self.qnetwork_local, self.qnetwork_target, TAU)                     
 
     def soft_update(self, local_model, target_model, tau):
