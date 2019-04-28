@@ -1,5 +1,7 @@
 ### Results
 
-![Dumb agent][lander_dumb.gif]
+Dumb Agent
+![alt text](lander_dumb.png)
 
-![Trained agent][lander_trained.gif]
+Trained Agent
+![alt text](lander_trained.gif)
