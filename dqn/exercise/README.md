@@ -22,9 +22,8 @@ x = (self.fcl3(x))
 
 ## Animated Results
 ### Dumb Agent
-<p align="center">
-  ![alt text](lander_dumb.gif)
-</p>
+
+![alt text](lander_dumb.gif)
 
 ### Trained Agent
 
