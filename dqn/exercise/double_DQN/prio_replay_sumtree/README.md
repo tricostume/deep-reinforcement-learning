@@ -1,32 +1,31 @@
-## Prioritized replay implemented with a Sum Tree
+## Prioritized memory replay implemented with a Sum Tree
 
 In this section a sum tree was implemented and used for the prioritized sampling with importance weights. These weights are mainly used for stabilizing the training process, which results more helpful at the early stage of training.
 
 ### Training parameters
 
-Episodes number: 2000
-Max. time steps per episode: 1000
-Initial epsilon: 1
-Final epsilon: 0.01
-Epsilon decay: 0.995
+- Episodes number: 2000
+- Max. time steps per episode: 1000
+- Initial epsilon: 1
+- Final epsilon: 0.01
+- Epsilon decay: 0.995
 
-Memory:
-Buffer size: 1e5
-Batch size: 32
-Replay alpha: 0.6
-Replay beta: 0.5 annealed into 0.01 with a summed increment of 0.000003 per episode.
+#### Memory:
+- Buffer size: 1e5
+- Batch size: 32
+- Replay alpha: 0.6
+- Replay beta: 0.5 annealed into 0.01 with a summed increment of 0.000003 per episode.
 
-Optimization:
-Optimizer: RMSprop
-LR: 3E-5 (learning rate)
-Momentum: 0.95
-Notice: Learning rate was changed to 2E-5 at
-episode 550 to allow for further adapted learning.
+#### Optimization:
+- Optimizer: RMSprop
+- LR: 3E-5 (learning rate)
+- Momentum: 0.95
+- Notice: Learning rate was changed to 2E-5 at episode 550 to allow for further adapted learning.
 
-Further parameters:
-Gamma: 0.995 (discount factor)
-Tau: 1E-3 (soft update of target)
-Update every: 4 time steps
+#### Further parameters:
+- Gamma: 0.995 (discount factor)
+- Tau: 1E-3 (soft update of target)
+- Update every: 4 time steps
 
 
 ### Experiments
