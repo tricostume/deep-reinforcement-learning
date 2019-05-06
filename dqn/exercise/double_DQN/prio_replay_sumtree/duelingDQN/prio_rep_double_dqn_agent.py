@@ -2,7 +2,7 @@ import numpy as np
 import random
 from collections import namedtuple, deque
 from prioritized_memory import Memory
-from model import QNetwork
+from model2 import QNetwork
 
 import torch
 import torch.nn.functional as F

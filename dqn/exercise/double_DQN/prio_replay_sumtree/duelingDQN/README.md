@@ -34,3 +34,7 @@ In order to arrive to the selected parameters, which allow for solution of the i
 - Further increased the step by allowing it to jump to 2E-5 at episode 550.
 
 ![alt text](baseline.png)
+
+- Changed dueling architecture
+
+![alt text](changed_architecture.png)
