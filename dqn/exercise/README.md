@@ -4,7 +4,9 @@ Here we present our results for the DQN algorithm as well as the research chain 
 This is separated in several parts:
 * <a href='.'>Vanilla DQN</a><br>
 * <a href='double_DQN'>Double DQN</a><br>
-* <a href='double_DQN/prio_replay_sumtree/'>Double DQN with Prioritized Experience Replay</a><br>
+* <a href='double_DQN/prio_replay_sumtree/'>Double DQN with Prioritized Experience Replay (PER)</a><br>
+* <a href='double_DQN/prio_replay_sumtree/duelingDQN/'>Double Dueling DQN with PER</a><br>
+
 
 ## DQN algorithm
 
