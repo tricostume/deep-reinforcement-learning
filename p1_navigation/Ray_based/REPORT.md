@@ -34,7 +34,7 @@ V = x1 * torch.ones(self.action_size)
 
 Notice that for training a variable hidden size was proposed. By computing the scalar state values V and the action convenience matrix A a means of breaking the intractability between both was needed, here the mean of the outputs of the neural stream determining the A matrix was substracted.
 
-In this section a sum tree was implemented and used for the prioritized sampling with importance weights. These weights are mainly used for stabilizing the training process, which results more helpful at the early stages of training but more important at the latest, when the algorithm is about to converge (given that a bigger beta parameter implies smaller learning rate).
+In this section a [sum tree](https://github.com/rlcode/per/blob/master/SumTree.py) was adapted and used for the prioritized sampling with importance weights. These weights are mainly used for stabilizing the training process, which results more helpful at the early stages of training but more important at the latest, when the algorithm is about to converge (given that a bigger beta parameter implies smaller learning rate).
 
 #### Training parameters
 

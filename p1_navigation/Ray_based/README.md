@@ -1,13 +1,15 @@
 # Ray based applied navigation
 
+DISCLOSURE: This is not my main repository and is used only for delivering project reports.
+
 This constitutes a project aiming for solving the problem of applied navigation in an environment with obstacles. In this sense an agent navigates in a 2D world attempting to pick only to pick yellow bananas while rejecting to pick the blue ones. The problem is approached from reinforcement learning perspective, in particular with methods based on DQN.
 
-For a more comprehensive explanation on the Know How refer to the <a href='REPORT.md'>Technical Report</a><br> 
+For a more comprehensive explanation on the Know How refer to the <a href='REPORT.md'>Technical Report</a><br>
 ## The environment
 
 The environment consists of a 2D squared world in which yellow and blue bananas lay on the floor. New bananas fall randomly at different times during the development of the interaction and it is the task of the agent to collect as many yellow bananas as possible.
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of the agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
 
 The state space has 37 dimensions and contains the agent's velocity, along with ray-based perception of objects around agent's forward direction.  Given this information, the agent has to learn how to best select actions.  Four discrete actions are available, corresponding to:
 - **`0`** - move forward.
