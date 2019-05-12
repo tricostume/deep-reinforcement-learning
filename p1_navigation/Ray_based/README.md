@@ -2,7 +2,7 @@
 
 This constitutes a project aiming for solving the problem of applied navigation in an environment with obstacles. In this sense an agent navigates in a 2D world attempting to pick only to pick yellow bananas while rejecting to pick the blue ones. The problem is approached from reinforcement learning perspective, in particular with methods based on DQN.
 
-For a more comprehensive technical explanation refer to the <a href='REPORT.md'>Report</a><br> here.
+For a more comprehensive explanation on the Know How refer to the <a href='REPORT.md'>Technical Report</a><br> 
 ## The environment
 
 The environment consists of a 2D squared world in which yellow and blue bananas lay on the floor. New bananas fall randomly at different times during the development of the interaction and it is the task of the agent to collect as many yellow bananas as possible.
