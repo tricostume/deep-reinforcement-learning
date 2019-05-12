@@ -64,8 +64,9 @@ In this section a sum tree was implemented and used for the prioritized sampling
 
 ![alt text](agent_smart.gif)
 
-We could solve the interaction in 1194 episodes. For completeness we leaver here the learning dynamics. Notice that we adjusted the learning rate at episode 1200 as explained.
+We could solve the interaction in 1194 episodes. For completeness we leave here the learning dynamics. Notice that we adjusted the learning rate at episode 1200 as explained.
 
+```
 Episode 100	Average Score: 0.67	epsilon: 0.61	beta: 0.52
 Episode 200	Average Score: 2.13	epsilon: 0.37	beta: 0.54
 Episode 300	Average Score: 4.34	epsilon: 0.22	beta: 0.57
@@ -80,6 +81,7 @@ Episode 1100	Average Score: 11.47	epsilon: 0.01	beta: 0.75
 Episode 1200	Average Score: 12.10	epsilon: 0.01	beta: 0.77
 Episode 1200	Average Score: 12.10	epsilon: 0.01	beta: 0.77 adjusting learning rate!
 **Episode 1294	Average Score: 13.00	epsilon: 0.01	beta: 0.79**
+```
 
 The corresponding learning graph can be visualized here:
 
@@ -88,6 +90,7 @@ The corresponding learning graph can be visualized here:
 ## Outlook
 As you can see above, the learning dynamics was quite smooth until reaching an average value of 9. From then on we just tried to get as close as possible with RMSPRop to the desired value of 13 and reduced the learning rate to allow for certain convergence. This does not mean that the algorithm stops learning, in fact we performed a complementary experiment that demonstrates that the value can keep on increasing and whose learning dynamics is pasted here:
 
+```
 Episode 100	Average Score: 0.67	epsilon: 0.61	beta: 0.52
 Episode 200	Average Score: 2.13	epsilon: 0.37	beta: 0.54
 Episode 300	Average Score: 4.34	epsilon: 0.22	beta: 0.57
@@ -107,6 +110,7 @@ Episode 1500	Average Score: 12.69	epsilon: 0.01	beta: 0.84
 **Episode 1600	Average Score: 13.46	epsilon: 0.01	beta: 0.86**
 **Episode 1700	Average Score: 13.42	epsilon: 0.01	beta: 0.88**
 Episode 1775	Average Score: 12.95	epsilon: 0.01	beta: 0.90
+```
 
 As a very obvious improvement we could keep decreasing the learning rate in a quicker manner after some point.
 
