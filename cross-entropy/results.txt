@@ -1,0 +1,19 @@
+Original parameters
+Episode 10	Average Score: -1.44
+Episode 20	Average Score: -3.98
+Episode 30	Average Score: -4.18
+Episode 40	Average Score: 2.57
+Episode 50	Average Score: 18.74
+Episode 60	Average Score: 29.35
+Episode 70	Average Score: 38.69
+Episode 80	Average Score: 45.65
+Episode 90	Average Score: 47.98
+Episode 100	Average Score: 52.56
+Episode 110	Average Score: 62.09
+Episode 120	Average Score: 72.28
+Episode 130	Average Score: 82.21
+Episode 140	Average Score: 89.48
+------------------------------------------------------------
+Increase noise radius NAAAA
+------------------------------------------------------------
+INcrease noise radius and increase num of population 
