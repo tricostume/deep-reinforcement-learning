@@ -102,3 +102,7 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+*.zip
+/p3_collab-compet/implementation/Tennis_Linux/*
+/p3_collab-compet/implementation/Tennis_Linux_NoVis/*

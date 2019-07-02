@@ -120,6 +120,8 @@ def main():
             
             # step forward one frame
             next_obs, next_obs_full, rewards, dones, info = env.step(actions_for_env)
+            print(next_obs.shape)
+            print(next_obs_full.shape)
             
             # add data to buffer
             transition = (obs, obs_full, actions_for_env, rewards, next_obs, next_obs_full, dones)
